@@ -20,14 +20,14 @@
     - run `docker-compose up -d` to start the database and the mail server
     - It will start a `mysql` on port 3301 and `maildev` on port 1080/1025
     - The web ui of the mailer is accessible on port 1080
-    - 2 Setup the environment variable
-
-* *2- Install dependencies*
+* *2- Setup the environment variable*
+    - copy and rename `.env.example` to `.env` in all 3 projects
+* *3- Install dependencies*
     - open `admin/` and run `yarn or npm i`
     - open `front/` and run `yarn or npm i`
     - open `api/` and run `go get -u`
 
-* *2- Start the development servers*
+* *4- Start the development servers*
     - open `admin/` and run `yarn start or npm run start`. It will the development server on port `1337`
     - open `front/` and run `yarn dev or npm run dev`. It will start the ui development server on port `5173`
     - open `api/` and run `go run main.go`. It will start the api on port `8080`
